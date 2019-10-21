@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block body %}
+
+
+    {% for note in all_notes %}
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{{note.img.url}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{note.title}}</h5>
+        <p class="card-text">{{note.content|truncatewords:10}}</p>
+        <ul>
+          {% for tags in note.split_tag %}
+            <li>{{tags}}</li>
+          {% endfor %}
+          <p>{{note.created|date:'j M '}}</p>
+        </ul>
+        <a href="{% url 'notes:note_detail' slug=note.slug %}" class="card-link btn-know-more">Know More</a>
+      </div>
+    </div>
+    {% endfor %}
+{% endblock %}

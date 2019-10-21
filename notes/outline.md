@@ -1,0 +1,23 @@
+- Recap For Yesterday (How Django Works)
+- Documentation
+- Detail View
+- URL
+- Forms (Create Note , update Note )
+- Updating Models
+          - Slug
+          - slugify
+          - Choices(level)
+          - Tags
+          - split_tags
+          - Active
+          - Public
+          - get_absolute_url
+          - meta class (ordering , verbose name)
+          - User
+
+
+- Static - Media
+- Update Front-End
+- Template Language (Include , Extend , filters)
+- Handel Site Map (Create Home , accounts , login  , public notes & user notes )
+- List View , Detail View With Class Based Views
